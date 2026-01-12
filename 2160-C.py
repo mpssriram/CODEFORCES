@@ -59,12 +59,12 @@ def finder(n):
                     return "no"
             else:
                 return check_for_odd(n)
-t = int(input())
-for _ in range(t):
-     n = int(input())
-     print(finder(n))
-# start_time = t.time()
-# for j in range(10000):
-#     print(finder(j))
-# end_time = t.time()
-# print("time required", {end_time - start_time})
+# t = int(input())
+# for _ in range(t):
+#      n = int(input())
+#      print(finder(n))
+start_time = t.time()
+for j in range(10000):
+    print(finder(j))
+end_time = t.time()
+print("time required", {end_time - start_time})
