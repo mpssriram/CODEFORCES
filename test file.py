@@ -1,5 +1,4 @@
-a = [1,2,3,4]
-if [1,2] in a:
-    print('true')
-else:
-    print('fail')
+a = round(11/2)
+b = int(11/2)
+print(a)
+print(b)
