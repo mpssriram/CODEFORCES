@@ -16,14 +16,13 @@ def series(n):
 
     return a
 
-print(series(8))
 
-
-
-
-
-
-
-    
-
-    
+t = int(input())
+for _ in range(t):
+    inn = int(input())
+    if inn == 1:
+        print(1)
+    else:
+        b = series(inn)
+        print(max(b)+2)
+        
