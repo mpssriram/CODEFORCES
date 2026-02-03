@@ -1,30 +1,16 @@
-n = int(input())
-for _ in range(n):
-    b = int(input())
-    a = list(map(int,input().split()))
+def sol():
+    a,b = map(int,input().split())
+    if a&1 and b&1: return a*b + 1
+    if b&1: return -1
+    if a&1 and b&2: return -1
+    if a&1: b//=2
+    else: a//=2
+    b//=2
+    return 2*(a*b + 1)
+ 
+for _ in range(int(input())):
+    print(sol())
 
-    if b == 1:
-        print(1)
-    else:
-        a = sorted(set(a))
-        n,k = a[0],a[1]
-        d = [ii - n for ii in a]
-        e = [jj - k for jj in a]
-        mex = 0
-        while mex >= 0:
-                if mex in d :
-                    mex += 1
-                else:
-                    f = mex
-                    break
-        mex1 = 0
-        while mex1 >= 0:
-            if mex1 in e:
-                mex1 += 1
-            else:
-                g = mex1
-                break
-        print(max(f,g))
 
 
 
