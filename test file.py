@@ -1,22 +1,6 @@
-def series(n):
-    a = [0, 0]
-    add = 1
-    count = 0   
-
-    for _ in range(n-2):
-        a.append(a[-1] + add)
-        count += 1
-
-        if add == 1:          
-            add += 1
-            count = 0
-        elif count == 2:      
-            add += 1
-            count = 0
-
-    return a
-
-print(series(8))
+arr = [[1,2,1]]
+arr[0][2] += 1
+print(arr)
 
 
 
