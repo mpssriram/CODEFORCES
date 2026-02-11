@@ -1,31 +1,28 @@
-def decremental(c):
-    values = ""
-    for i in range(1,len(c)):
-        if c[i] == c[i-1]-1:
-            pass
-        else:
-            values += '1'
-    
-    if len(values) == 0:
-        return 0
-    else:
-        return 1
-
-
-
-
-
-
-
 
 t = int(input())
 for _ in range(t):
-    a = int(input())
-    b = list(map(int,input().split()))
-
-    d = decremental(b)
-    if d == 0:
-        print(b)
+    inn = int(input())
+    arr = list(map(int,input().split()))
+    bom = arr
+    if arr == sorted(arr,reverse=True):
+        for i in arr:
+            print(i, end = " ")
     else:
-        pass
-    
+        minimum = min(arr)
+        maximum = max(arr)
+        arr = list(set(arr) - {maximum,minimum})
+        arr = sorted(arr)
+        arr.insert(0,maximum)
+        arr.insert(1,minimum)
+        if arr == bom:
+            arr = list(set(arr) - {maximum,minimum})
+            arr.insert(0,maximum)
+            arr.insert(inn-1,minimum)
+            for i in arr:
+                print(i, end = " ")
+        else:
+            for i in arr:
+                print(i, end = " ")
+
+            
+
