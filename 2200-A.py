@@ -6,4 +6,4 @@ for _ in range(t):
     if arr.count(max(arr)) == 1:
         print(1)
     else:
-        print(arr.count(max(arr)))
+        print( arr.count(max(arr)))
