@@ -1,14 +1,12 @@
-a = list("uwuuwu")
+a = [1, 1, 2,3,4,1,1,7,3,9]
+count = 0
+for i in range(9):
+    for j in range(1,10):
+        if a[i]*a[j] == j-i:
+            count += 1
 
-changed = True
+print(count)
 
-i = 0
-while i < len(a) - 1:
-    if a[i] == a[i+1]:
-        a.pop(i)      
-        a.pop(i)      
-        i = 0         
-    else:
-        i += 1
-print(a)
+
+
             
