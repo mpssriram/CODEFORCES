@@ -1,4 +1,4 @@
-"""t = int(input())
+t = int(input())
 for _ in range(t):
     inn = int(input())
     arr = list(input())
@@ -13,9 +13,9 @@ for _ in range(t):
             i += 1
 
     
-    print(len(arr)//2)"""
+    print(len(arr)//2)
 
-class Stack():
+"""class Stack():
     def __init__(self):
         self.content = []
 
@@ -31,4 +31,4 @@ class Stack():
         else:
             return False
     def reverse_string(self,x):
-        return x[::-1]
+        return x[::-1]"""
